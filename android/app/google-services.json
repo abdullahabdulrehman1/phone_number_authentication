@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102670919556",
+    "project_id": "phone-auth-ac97e",
+    "storage_bucket": "phone-auth-ac97e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102670919556:android:d506950d08fdcaca85dfd1",
+        "android_client_info": {
+          "package_name": "com.example.phone_number_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102670919556-gm25pnk22742o57tfrbl2gg82km07f6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7Bf_BX_vp5xueE-uyl8P-7J6nMM89BTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102670919556-gm25pnk22742o57tfrbl2gg82km07f6i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
