@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:phone_number_authentication/cubit/auth_cubit/auth_cubit.dart';
+import 'package:phone_number_authentication/firebase_options.dart';
 import 'package:phone_number_authentication/pages/home_screen.dart';
 
 void main() async {
@@ -11,7 +12,9 @@ void main() async {
 }
 
 Future<void> initializeFirebase() async {
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   // You can add additional Firebase configuration or setup here if needed
 }
 
