@@ -34,15 +34,16 @@ class _OtpScreenState extends State<OtpScreen> {
               decoration: InputDecoration(
                 hintText: 'Enter OTP',
               ),
+              keyboardType: TextInputType.number,
             ),
             SizedBox(height: 16.0),
             BlocConsumer<AuthCubit, AuthState>(
               listener: (context, state) {
                 if (state is AuthCodeLoggedInState) {
                   Navigator.popUntil(context, (route) => route.isFirst);
-                  Navigator.pushReplacement(
+                  Navigator.pushReplacementNamed(
                     context,
-                    MaterialPageRoute(builder: (context) => FirstPage()),
+                    "/mainpage",
                   );
                 }
               },

@@ -25,14 +25,15 @@ class HomeScreen extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'Enter Phone Number',
               ),
+              keyboardType: TextInputType.phone,
             ),
             SizedBox(height: 16.0),
             BlocConsumer<AuthCubit, AuthState>(
               listener: (context, state) {
                 if (state is AuthCodeSentState) {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(builder: (context) => OtpScreen()),
+                    "/otp",
                   );
                 }
               },
